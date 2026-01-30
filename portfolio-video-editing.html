@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Editing Portfolio</title>
+    <link rel="icon" type="image/png" href="medio logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <img src="final logo.png" alt="Mediomate Logo" />
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <button
+            class="cta-btn"
+            onclick="window.location.href = 'index.html#contact'"
+          >
+            Get Started
+          </button>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 120px 0 60px">
+      <div class="container">
+        <div class="video-section-header">
+          <h1 class="video-hero-title" style="text-align: center">
+            Video Editing Portfolio
+          </h1>
+          <p class="hero-subtitle" style="text-align: center; margin: 0 auto">
+            Professional video editing projects that bring stories to life
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+      <section class="portfolio">
+        <div class="container-s">
+            <div class="video-portfolio-grid short-video-grid"
+            style="grid-template-columns: repeat(auto-fit, minmax(270px, 270px)); gap: 10rem;">
+            <div class="portfolio-item short-video" style="height: 480px; width: 270px;">
+                <div class="portfolio-image">
+                    <video
+                        style="
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        background-color: black;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        ">
+                        <source src="short videos/short 1.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <button
+                        class="video-play-btn"
+                        onclick="
+                        this.previousElementSibling.setAttribute(
+                            'controls',
+                            'controls',
+                        );
+                        this.previousElementSibling.play();
+                        this.style.display = 'none';
+                        "
+                    ></button>
+                </div>
+            </div>
+            <div class="portfolio-item short-video">
+                <div class="portfolio-image">
+                <video
+                    style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    background-color: black;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    "
+                >
+                    <source src="short videos/short 2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <button
+                    class="video-play-btn"
+                    onclick="
+                    this.previousElementSibling.setAttribute(
+                        'controls',
+                        'controls',
+                    );
+                    this.previousElementSibling.play();
+                    this.style.display = 'none';
+                    "
+                ></button>
+                </div>
+            </div>
+            <div class="portfolio-item short-video">
+                <div class="portfolio-image">
+                <video
+                    style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    background-color: black;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    "
+                >
+                    <source src="short videos/short 3.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <button
+                    class="video-play-btn"
+                    onclick="
+                    this.previousElementSibling.setAttribute(
+                        'controls',
+                        'controls',
+                    );
+                    this.previousElementSibling.play();
+                    this.style.display = 'none';
+                    "
+                ></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Long Form Portfolio -->
+    <section class="portfolio">
+      <div class="container-l">
+        <div class="video-portfolio-grid">
+          <div class="portfolio-item-long">
+            <div class="portfolio-image">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/xLG2vhUClnE"
+                  title="Product Demo"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-long">
+            <div class="portfolio-image">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/D_KSR3S6W8I"
+                  title="Brand Campaign Video"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="portfolio"
+      style="background: var(--bg-secondary); padding: 80px 0"
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Explore Other Categories</h2>
+          <p class="section-subtitle">Discover more of our work</p>
+        </div>
+        <div
+          class="portfolio-grid"
+          style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))"
+        >
+          <a
+            href="portfolio-motion-graphics.html"
+            class="portfolio-item"
+            style="height: 250px"
+          >
+            <div class="portfolio-image">
+              <img
+                src="thumbnail.jpeg"
+                alt="Motion Graphics"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                "
+              />
+              <div class="portfolio-overlay">
+                <h4>Thumbnail Designs</h4>
+                <p>View Projects →</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="portfolio-social-media.html"
+            class="portfolio-item"
+            style="height: 250px"
+          >
+            <div class="portfolio-image">
+              <img
+                src="n8n.jpeg"
+                alt="Social Media"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                "
+              />
+              <div class="portfolio-overlay">
+                <h4>Automated Workflows</h4>
+                <p>View Projects →</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="portfolio-corporate.html"
+            class="portfolio-item"
+            style="height: 250px"
+          >
+            <div class="portfolio-image">
+              <img
+                src="ugc.jpeg"
+                alt="Corporate"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                "
+              />
+              <div class="portfolio-overlay">
+                <h4>AI-generated UGC</h4>
+                <p>View Projects →</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Start Your Video Project?</h2>
+          <p>Let's bring your vision to life with professional editing</p>
+          <button
+            class="btn-primary-large"
+            onclick="window.location.href = 'index.html#contact'"
+          >
+            Get Started Today
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo" style="margin-bottom: 1rem">
+              <img
+                src="final logo.png"
+                alt="Mediomate Logo"
+                style="height: 50px; width: auto"
+              />
+            </div>
+            <p>
+              Professional video editing and digital services to elevate your
+              content.
+            </p>
+            <div class="social-links" style="display: flex; gap: 12px">
+              <a
+                href="https://www.facebook.com/profile.php?id=61585514055033"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/mediomate_/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/zainahmed-mediomate/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M4 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM2 9h4v12H2zM9 9h4v2h.1a4.3 4.3 0 0 1 3.9-2c4.1 0 5 2.7 5 6.2V21h-4v-5.5c0-1.3 0-3-2-3s-2.3 1.4-2.3 2.9V21H9z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="portfolio-video-editing.html">Video Editing</a></li>
+              <li>
+                <a href="portfolio-motion-graphics.html">Thumbnail Designs</a>
+              </li>
+              <li>
+                <a href="portfolio-social-media.html">Automated Workflows</a>
+              </li>
+              <li><a href="portfolio-corporate.html">AI-generated UGC</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#portfolio">Portfolio</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Mediomate. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
